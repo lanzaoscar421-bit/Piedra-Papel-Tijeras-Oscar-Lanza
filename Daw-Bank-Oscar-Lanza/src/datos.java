@@ -8,7 +8,7 @@ public class datos {
 public datos (String iban, String titular, double saldo){
     this.iban = iban;
     this.titular = titular;
-    this.saldo = 0;
+    this.saldo = saldo;
 }
 //Getters y setter
 
@@ -16,10 +16,10 @@ public datos (String iban, String titular, double saldo){
     public String getIban() {
         return iban;
     }
+
     public String getTitular() {
     return titular;
     }
-
     public void setTitular(String titular) {
         this.titular = titular;
     }
