@@ -30,9 +30,19 @@ public class Main {
         System.out.println("Bienvenido a tu cuenta de banco");
         System.out.println("*******************************");
 
-        datos miCuenta = new datos(sc.nextLine(), sc.nextLine(), sc.nextDouble());
+        datos MiCuenta = new datos(sc.nextLine(), sc.nextLine(), sc.nextDouble());
 
-        miCuenta.getIban();
+        MiCuenta.getIban();
+        MiCuenta.getTitular();
+        MiCuenta.getSaldo();
+
+        movimientos MisMovimientos = new movimientos(sc.nextDouble(), sc.nextDouble(), sc.nextLine(), sc.nextLine());
+
+        MisMovimientos.getfecha();
+        MisMovimientos.getingreso();
+        MisMovimientos.getIDmovimiento();
+        MisMovimientos.getretirada();
+
 
         int opcion = 0;
         while (opcion != 6){
@@ -56,14 +66,17 @@ public class Main {
                 case 1:
 
                 break;
+
+                case 2:
+
+                break;
+
+                case 3:
+                break;
             }
 
 
         }
-
-
-
-
 
 
 
