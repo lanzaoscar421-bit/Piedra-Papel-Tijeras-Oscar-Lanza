@@ -1,4 +1,4 @@
-public class movimientos {
+public class Movimientos {
 
     private double ingreso;
     private double retirada;
@@ -7,7 +7,7 @@ public class movimientos {
 
 
     //Constructores
-    public movimientos(double ingreso, double retirada, String IDmovimiento, String fecha) {
+    public Movimientos(double ingreso, double retirada, String IDmovimiento, String fecha) {
         this.ingreso = ingreso;
         this.retirada = retirada;
         this.IDmovimiento = IDmovimiento;

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class DawBank {
 
     public static void main(String[] args) {
 
@@ -26,13 +26,11 @@ public class Main {
 
         //Primero pondremos para que el usuario ponga sus datos
 
+
         System.out.println("*******************************");
         System.out.println("Bienvenido a tu cuenta de banco");
         System.out.println("*******************************");
 
-        datos miCuenta = new datos(sc.nextLine(), sc.nextLine(), sc.nextDouble());
-
-        miCuenta.getIban();
 
         int opcion = 0;
         while (opcion != 6){
@@ -54,8 +52,16 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-
-                break;
+                    CuentaBancaria MiCuenta = new CuentaBancaria(sc.nextLine(), sc.nextLine(), sc.nextDouble());
+                    System.out.println("ingrese su IBAN");
+                    System.out.println("Ejemplo de IBAN: ES91 2100 0418 4502 0005 1332");
+                    MiCuenta.getIban();
+                    MiCuenta.setIban(sc.nextLine());
+                    System.out.println("Ingrese el nombre del titular ");
+                    MiCuenta.getTitular();
+                    MiCuenta.setTitular(sc.nextLine());
+                    System.out.println("Saldo del titular: " + MiCuenta.getSaldo());
+                    break;
             }
 
 
