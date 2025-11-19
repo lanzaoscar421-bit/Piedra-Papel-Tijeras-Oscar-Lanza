@@ -31,6 +31,22 @@ public class DawBank {
         System.out.println("Bienvenido a tu cuenta de banco");
         System.out.println("*******************************");
 
+<<<<<<< HEAD:Daw-Bank-Oscar-Lanza/src/DawBank.java
+=======
+        datos MiCuenta = new datos(sc.nextLine(), sc.nextLine(), sc.nextDouble());
+
+        MiCuenta.getIban();
+        MiCuenta.getTitular();
+        MiCuenta.getSaldo();
+
+        movimientos MisMovimientos = new movimientos(sc.nextDouble(), sc.nextDouble(), sc.nextLine(), sc.nextLine());
+
+        MisMovimientos.getfecha();
+        MisMovimientos.getingreso();
+        MisMovimientos.getIDmovimiento();
+        MisMovimientos.getretirada();
+
+>>>>>>> e5f878c32cacf9eff41473f42e10dc9e75415787:Daw-Bank-Oscar-Lanza/src/Main.java
 
         int opcion = 0;
         while (opcion != 6){
@@ -52,6 +68,7 @@ public class DawBank {
 
             switch (opcion) {
                 case 1:
+<<<<<<< HEAD:Daw-Bank-Oscar-Lanza/src/DawBank.java
                     CuentaBancaria MiCuenta = new CuentaBancaria(sc.nextLine(), sc.nextLine(), sc.nextDouble());
                     System.out.println("ingrese su IBAN");
                     System.out.println("Ejemplo de IBAN: ES91 2100 0418 4502 0005 1332");
@@ -62,14 +79,21 @@ public class DawBank {
                     MiCuenta.setTitular(sc.nextLine());
                     System.out.println("Saldo del titular: " + MiCuenta.getSaldo());
                     break;
+=======
+
+                break;
+
+                case 2:
+
+                break;
+
+                case 3:
+                break;
+>>>>>>> e5f878c32cacf9eff41473f42e10dc9e75415787:Daw-Bank-Oscar-Lanza/src/Main.java
             }
 
 
         }
-
-
-
-
 
 
 
