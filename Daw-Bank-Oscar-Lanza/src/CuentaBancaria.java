@@ -27,9 +27,6 @@ public class CuentaBancaria {
     public double getSaldo() {
         return this.saldo;
     }
-    public void setSaldo(){
-
-    }
 
     //Mostrar informacion de la cuenta
     //Ahora pondremos public ya que queremos que se vea la informacion en las otras clases
@@ -42,6 +39,36 @@ public class CuentaBancaria {
         return Info; //Ponemos return Info ya que devuelve la informacion Info
 
     }
+
+    public void ingresar (double cantidad){
+        if(cantidad <= 0){
+            System.out.println("La cantidad desea ingresar tiene que ser mayor a 0");
+        } else if (cantidad >=3.000) {
+            System.out.println("Usted ingreso mucho dinero de Golpe, se notificara a Hacienda⚠️");
+        }
+
+        //Aqui ira el registro de movimiento
+    }
+
+    public void retirar (double cantidad){
+        if(cantidad >= 0){
+            System.out.println("Tienes que que sacar un minino de 1$ ");
+        }else if (cantidad <= 0){
+
+        saldo -= cantidad;
+
+        //Aviso Ahora de saldo negativo
+
+        if (saldo < 0){
+            System.out.println("Tienes saldo negativo, porfavor ingerese dinero cuando pueda");
+        }else if (saldo > 3000){
+            System.out.println("Usted Retiro mucho dinero de Golpe, se notificara a Hacienda⚠️");
+        }
+
+        }
+        //Registro de movimiento
+    }
+
 
 
 
