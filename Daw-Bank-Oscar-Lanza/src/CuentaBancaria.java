@@ -1,3 +1,6 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class CuentaBancaria {
 
     private String iban;
@@ -39,6 +42,24 @@ public class CuentaBancaria {
         return Info; //Ponemos return Info ya que devuelve la informacion Info
 
     }
+
+    private Movimientos [] movimientos = new Movimientos[100];
+    private int numeromovimientos = 0;
+
+
+    private void registrarMovimientos(String tipo, double cantidad){
+
+        //Fecha actual
+        LocalDate Hoy = LocalDate.now();
+        String fecha = Hoy.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        //Ahora sera el id
+        int numeroMovimientos = +1;
+        //Ahora crearemos el objeto movimiento
+
+
+    }
+
+
 
     public void ingresar (double cantidad){
         if(cantidad <= 0){

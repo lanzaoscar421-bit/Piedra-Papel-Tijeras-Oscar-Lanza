@@ -9,9 +9,9 @@ public class DawBank {
 
         //Primero pondremos para que el usuario ponga sus datos
 
-        System.out.println("************************************");
-        System.out.println("Bienvenido a tu cuenta de banco🧃✡️");
-        System.out.println("************************************");
+        System.out.println("*********************************");
+        System.out.println("Bienvenido a tu Cuenta de banco🧃");
+        System.out.println("*********************************");
 
         System.out.println("Inserte el Iban");
         String Iban = sc.nextLine();
@@ -75,7 +75,18 @@ public class DawBank {
                 case 5:
                     System.out.println("Inserte la cantidad de dinero que desee ");
 
+
                 break;
+                case 6:
+                    System.out.println("Inserte la cantidad de dinero que desea retirar");
+                break;
+                case 7:
+                    System.out.println("Sus movimientos fueron : ");
+                break;
+                case 8:
+                    System.out.println("***************");
+                    System.out.println("Adios, Buen Dia");
+                    System.out.println("***************");
             }
 
 
